@@ -8,6 +8,7 @@ import { Alert } from "./components/Alert/Alert";
 import { ClicksCounter } from "./components/ClicksCounter/ClicksCounter";
 import { Quote } from "./components/Quote/Quote";
 import { Box } from "./components/Box/Box";
+import { FavFruit } from "./components/FavFruit/FavFruit";
 
 export const App = () => {
 	return (
@@ -42,6 +43,8 @@ export const App = () => {
 				<h2>Contenido dentro de Box</h2>
 				<p>Este texto está dentro de la caja</p>
 			</Box>
+
+            <FavFruit fruit={"fresa"} />
 		</>
 	);
 };
