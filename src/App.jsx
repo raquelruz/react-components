@@ -3,6 +3,7 @@ import { Avatar } from "./components/Avatar/Avatar";
 import { CustomButton } from "./components/CustomButton/CustomButton";
 import { UserCard } from "./components/UserCard/UserCard";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
+import { Product } from "./components/Product/Product"
 
 export const App = () => {
 	return (
@@ -16,6 +17,8 @@ export const App = () => {
 			<CustomButton text={"Aceptar"} />
 
             <WelcomeMessage username={"Raquel"}/>
+
+            <Product name={"Nike Dunk Low Next Nature"} price={59} info={"Siempre se puede contar con un clásico. Las Dunk Low combinan un estilo Color Block icónico con materiales premium y un acolchado suave para ofrecer una comodidad revolucionaria en todo momento. Las posibilidades son infinitas. ¿Cómo vas a llevar tus Dunk?"}/>
 		</>
 	);
 };
