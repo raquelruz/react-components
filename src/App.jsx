@@ -3,10 +3,11 @@ import { Avatar } from "./components/Avatar/Avatar";
 import { CustomButton } from "./components/CustomButton/CustomButton";
 import { UserCard } from "./components/UserCard/UserCard";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
-import { Product } from "./components/Product/Product"
-import { Alert } from "./components/Alert/Alert"
+import { Product } from "./components/Product/Product";
+import { Alert } from "./components/Alert/Alert";
 import { ClicksCounter } from "./components/ClicksCounter/ClicksCounter";
 import { Quote } from "./components/Quote/Quote";
+import { Box } from "./components/Box/Box";
 
 export const App = () => {
 	return (
@@ -14,22 +15,33 @@ export const App = () => {
 			<h1>Primera app en React</h1>
 
 			<Avatar url={"./media/images/khaleesi.png"} name={"Khaleesi"} />
-			
-            <UserCard name={"Raquel"} age={29} city={"Jerez"} />
+
+			<UserCard name={"Raquel"} age={29} city={"Jerez"} />
 
 			<CustomButton text={"Aceptar"} />
 
-            <WelcomeMessage username={"Raquel"}/>
+			<WelcomeMessage username={"Raquel"} />
 
-            <Product name={"Nike Dunk Low Next Nature"} price={59} info={"Siempre se puede contar con un clásico. Las Dunk Low combinan un estilo Color Block icónico con materiales premium y un acolchado suave para ofrecer una comodidad revolucionaria en todo momento. Las posibilidades son infinitas. ¿Cómo vas a llevar tus Dunk?"}/>
-		
-            <Alert type={"error"} message={"Ha ocurrido un error"}/>
-            <Alert type={"info"} message={"Esto es un mensaje de informacion"}/>
-            <Alert type={"exito"} message={"Todo OK"}/>
-        
-            <ClicksCounter number={0}/>
+			<Product
+				name={"Nike Dunk Low Next Nature"}
+				price={59}
+				info={
+					"Siempre se puede contar con un clásico. Las Dunk Low combinan un estilo Color Block icónico con materiales premium y un acolchado suave para ofrecer una comodidad revolucionaria en todo momento. Las posibilidades son infinitas. ¿Cómo vas a llevar tus Dunk?"
+				}
+			/>
 
-            <Quote quote={"Solo sé que no se nada"} author={"Sócrates"} />
-        </>
+			<Alert type={"error"} message={"Ha ocurrido un error"} />
+			<Alert type={"info"} message={"Esto es un mensaje de informacion"} />
+			<Alert type={"exito"} message={"Todo OK"} />
+
+			<ClicksCounter number={0} />
+
+			<Quote quote={"Solo sé que no se nada"} author={"Sócrates"} />
+
+			<Box>
+				<h2>Contenido dentro de Box</h2>
+				<p>Este texto está dentro de la caja</p>
+			</Box>
+		</>
 	);
 };
