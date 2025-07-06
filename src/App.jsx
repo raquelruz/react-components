@@ -1,4 +1,5 @@
 import './App.css'
+import { CustomButton } from './components/CustomButton/CustomButton';
 import { UserCard } from './components/UserCard/UserCard';
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
 
         <UserCard name={"David"} age={35} city={"Madrid"}/>
 
+        <CustomButton text={"Aceptar"}/>
         </>
     )
 };
