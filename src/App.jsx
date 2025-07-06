@@ -5,6 +5,7 @@ import { UserCard } from "./components/UserCard/UserCard";
 import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 import { Product } from "./components/Product/Product"
 import { Alert } from "./components/Alert/Alert"
+import { ClicksCounter } from "./components/ClicksCounter/ClicksCounter";
 
 export const App = () => {
 	return (
@@ -25,6 +26,7 @@ export const App = () => {
             <Alert type={"info"} message={"Esto es un mensaje de informacion"}/>
             <Alert type={"exito"} message={"Todo OK"}/>
         
+            <ClicksCounter number={0}/>
         </>
 	);
 };
