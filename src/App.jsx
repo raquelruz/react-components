@@ -9,12 +9,6 @@ export const App = () => {
 
         <UserCard name={"Raquel"} age={29} city={"Jerez"}/>
 
-        <UserCard name={"Diego"} age={42} city={"Barcelona"}/>
-
-        <UserCard name={"Arantxa"} age={28} city={"Medina"}/>
-
-        <UserCard name={"David"} age={35} city={"Madrid"}/>
-
         <CustomButton text={"Aceptar"}/>
         </>
     )
