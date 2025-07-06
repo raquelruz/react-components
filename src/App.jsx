@@ -6,6 +6,7 @@ import { WelcomeMessage } from "./components/WelcomeMessage/WelcomeMessage";
 import { Product } from "./components/Product/Product"
 import { Alert } from "./components/Alert/Alert"
 import { ClicksCounter } from "./components/ClicksCounter/ClicksCounter";
+import { Quote } from "./components/Quote/Quote";
 
 export const App = () => {
 	return (
@@ -27,6 +28,8 @@ export const App = () => {
             <Alert type={"exito"} message={"Todo OK"}/>
         
             <ClicksCounter number={0}/>
+
+            <Quote quote={"Solo sé que no se nada"} author={"Sócrates"} />
         </>
 	);
 };
